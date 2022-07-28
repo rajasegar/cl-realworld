@@ -1,5 +1,5 @@
 {% extends "layouts/default.html" %}
-{% block title %}Welcome to Caveman2{% endblock %}
+{% block title %}Sign in - Conduit{% endblock %}
 {% block content %}
 
 <div class="auth-page">
@@ -17,12 +17,12 @@
 
                     <form method="post" action="/login">
                             <fieldset class="form-group">
-                              <input class="form-control form-control-lg" type="email" placeholder="Email">
+                              <input name="username" class="form-control form-control-lg" type="email" placeholder="Email">
                             </fieldset>
                             <fieldset class="form-group">
-                              <input class="form-control form-control-lg" type="password" placeholder="Password">
+                              <input name="pwd" class="form-control form-control-lg" type="password" placeholder="Password">
                             </fieldset>
-                        <button class="btn btn-lg btn-primary pull-xs-right">
+                        <button type="submit" class="btn btn-lg btn-primary pull-xs-right">
                             Sign in
                         </button>
                     </form>
